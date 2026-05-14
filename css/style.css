@@ -1,10 +1,17 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+
     margin: 0;
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 15px;
 }
 
 .home {
@@ -15,36 +22,89 @@ body {
     font-weight: bold;
     font-size: 18px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* shadow halus */
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .nama {
     text-align: center;
     background: #e0f2fe;          /* biru langit */
-    padding: 100px;
+    padding: 10px;
     color: #0c4a6e;
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    border-bottom: 1px solid #e5e7eb;
+
+}
+
+.text-ava{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 12px;
+}
+.text-ava p {
+    margin: 0;
+}
+.text-ava h1 {
+    margin: 0;
+}
+
+.text-ava h2{
+    margin: 4px;
+}
+.text-ava h3 {
+    margin: 0;
+}
+
+.buttons-ava{
+    display: flex;
+    margin: 15px;
+    flex-direction: row;
+    align-items: center;
+    gap: 75px;
+}
+.button-ava{
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: #0c4a6e;
+    color: white;
+    transition: 0.5s;
+    transform: translateY(0);
+}
+.button-ava:hover{
+    background: #075985;
+    transform: translateY(-10px);
 }
 
 .porto {
     text-align: center;
-    background: #bae6fd;          /* biru muda */
-    padding: 100px;
+    background: #f8fafc;          /* biru muda */
+    padding: 80px 40px;
     color: #0c4a6e;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .testimoni {
     text-align: center;
-    background: #7dd3fc;          /* biru cerah */
-    padding: 100px;
+    background: white;          /* biru cerah */
+    padding: 20px 40px;
     color: #0c4a6e;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .media-sosial {
     text-align: center;
-    background: #38bdf8;          /* biru terang */
+    background: white;          /* biru terang */
     padding: 30px;
-    color: #f0f9ff;
+    color: #0c4a6e;
     font-weight: bold;
     height: 88px;
+    border-bottom: 1px solid #e5e7eb;
 
 }
 
@@ -56,4 +116,36 @@ h1 {
 p {
     font-size: 18px;
     opacity: 0.85;
+}
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+    /* Background Properties */
+    background-image: url("../asset/honored.png");
+    background-size: cover;
+    background-position: center; /* Changed from 'right' to 'center' for better framing */
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #e5e7eb;
+    
+    /* Layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-ava button {
+    width: 120px;        /* Mengatur lebar jadi persegi panjang */
+    height: 40px;        /* Mengatur tinggi */
+    border-radius: 8px;  /* Membuat sudutnya sedikit melengkung (opsional) */
+    border: none;
+    background-color: #0c4a6e; /* Warna biru tua agar senada */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.button-ava button:hover {
+    background-color: #075985; /* Warna berubah saat kursor di atasnya */
 }
