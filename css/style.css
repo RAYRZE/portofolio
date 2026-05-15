@@ -82,11 +82,94 @@ body {
 }
 
 .porto {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
     background: #f8fafc;          /* biru muda */
-    padding: 80px 40px;
+    padding: 60px 30px;
     color: #0c4a6e;
     border-bottom: 1px solid #e5e7eb;
+    gap: 15px;
+}
+
+.text-porto {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+
+
+}
+
+.container-gambar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px
+}
+.gambar-porto1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    transform: translateY(0);
+    transition: 0.5s;
+
+}
+.picture1 {
+    width: 200px;
+    background-image: url("../assets/2-chatgpt.png");
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.describe {
+    width: 200px;
+    background: #e0f2fe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    border: 2px solid black;
+}
+
+.gambar-porto1:hover{
+    transform: translateY(-10px);
+}
+
+.gambar-porto2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+.picture2 {
+    background-image: url("../assets/2-chatgpt.png");
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.gambar-porto2:hover{
+    transform: translateY(-10px);
 }
 
 .testimoni {
@@ -123,7 +206,7 @@ p {
     border-radius: 50%;
     
     /* Background Properties */
-    background-image: url("../asset/honored.png");
+    background-image: url("../assets/honored.png");
     background-size: cover;
     background-position: center; /* Changed from 'right' to 'center' for better framing */
     background-repeat: no-repeat;
