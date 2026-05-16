@@ -173,24 +173,72 @@ body {
 }
 
 .testimoni {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
     background: white;          /* biru cerah */
     padding: 20px 40px;
     color: #0c4a6e;
     border-bottom: 1px solid #e5e7eb;
 }
 
+.testimoni-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px 40px;
+    background: #e0f2fe;
+    align-items: center;
+    border-radius: 12px;
+    width: 500px;
+}
+
+.testimoni-box h2{
+    margin: 0;
+}
+.testimoni-box h3{
+    margin: 12px;
+}
 .media-sosial {
-    text-align: center;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
     background: white;          /* biru terang */
-    padding: 30px;
+    padding: 4px;
     color: #0c4a6e;
     font-weight: bold;
     height: 88px;
     border-bottom: 1px solid #e5e7eb;
+    
 
 }
-
+.media-sosial h3{
+    margin: 4px;
+}
+.media-sosial-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+.picture{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.twitter {
+  background-image: url("../assets/twitter-brands-solid-full.svg");
+}
+.github {
+  background-image: url("../assets/github-brands-solid-full.svg");
+}
+.linkedin{
+    background-image: url("../assets/linkedin-brands-solid-full.svg");
+}
 h1 {
     font-size: 40px;
     margin: 0 0 10px 0;
@@ -220,7 +268,7 @@ p {
 .button-ava button {
     width: 120px;        /* Mengatur lebar jadi persegi panjang */
     height: 40px;        /* Mengatur tinggi */
-    border-radius: 8px;  /* Membuat sudutnya sedikit melengkung (opsional) */
+    border-radius: 12px;  /* Membuat sudutnya sedikit melengkung (opsional) */
     border: none;
     background-color: #0c4a6e; /* Warna biru tua agar senada */
     color: white;
