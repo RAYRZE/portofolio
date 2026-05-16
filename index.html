@@ -1,81 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RRZRE portofolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
+
     <div class="wrapper">
-     <div class="home">
-        <div class="logo" >LS</div>
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <img src="assets/honored.png" alt="" class="profile">
-        </div>
-     </div>
-     <div class="nama">
-        <div class="text-ava">
-            <h3>helo i'm</h3>
-            <h1>Honored </h1>
-            <h2>web developer</h2>
-            <p>I build websites and software.</p>
-            <p>I can create APIs, landing pages, and more.</p>
-            <div class="buttons-ava">
-                <button class="button-ava">contact me</button>
-                <button class="button-ava"> download cv</button>
-            </div>
-        </div>
-       <div class="avatar"></div>
-     </div>
 
-     <div class="porto">
-         <div class="text-porto">
-          <h2>🔥 my latest project</h2>
-         </div>
-         <div class="container-gambar">
-            <div class="gambar-porto">
-               <div class="picture-portofolio">
-                  <img src="assets/271333.jpg" alt="">
-               </div>
-               <div class="describe">
-                  <p>test</p>
-               </div>
-            </div>
-            <div class="gambar-porto">
-               <div class="picture-portofolio">
-                  <img src="assets/2-chatgpt.png" alt="">
-               </div>
-               <div class="describe">
-                  <p>test</p>
-               </div>
-            </div>
-         </div>
+        <!-- NAVBAR -->
+        <header class="navbar">
 
-     </div>
-     <div class="quotes">
-        <h1> 🌟 quotes</h1>
-        <div class="quotes-box">
-         <h2> "Life is not a problem to be solved,"</h2>
-         <h2>"but a reality to be experienced."</h2>
-         <h3> -Sören Kierkegaard</h3>
-        </div>
-     </div>
-     <div class="media-sosial">
-        <h3>sosial link</h3>
-        <div class="media-sosial-box">
-         <a href="https://github.com/izam-dev" target="_blank" class="picture-mediasosial twitter"></a>
-         <p>twiter</p>
-         <h3>|</h3>
-         <a href="https://github.com/izam-dev" target="_blank"  class="picture-mediasosial github"></a>
-         <p>github</p>
-         <h3>|</h3>
-         <a href="https://github.com/izam-dev" target="_blank"  class="picture-mediasosial linkedin"></a>
-         <p>linkedIn</p>
-        </div>
-     </div>
+            <div class="logo">
+                RZ
+            </div>
+
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                 <img 
+                src="assets/avatar.png" 
+                alt="profile picture"
+                class="profile"
+                >
+            </nav>
+
+
+
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="text-hero">
+
+                <h3>Hello, I'm</h3>
+
+                <h1>RRZE</h1>
+
+                <h2>web developer</h2>
+
+                <p>I build websites and software.</p>
+
+                <p>I can create APIs, landing pages, and more.</p>
+
+                <div class="buttons-hero">
+
+                    <a href="#contact" class="button-hero">
+                        contact me
+                    </a>
+
+                    <a 
+                        href="https://github.com/RAYRZE"
+                        target="_blank"
+                        class="button-hero"
+                    >
+                        view my github
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="avatar"></div>
+
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="porto">
+
+            <div class="section-title">
+                <h2>🔥 My Latest Project</h2>
+            </div>
+
+            <div class="container-project">
+
+                <!-- CARD 1 -->
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img 
+                            src="assets/project 1.png" 
+                            alt="portfolio preview"
+                        >
+                    </div>
+
+                    <div class="project-description">
+                        <h3>Project One</h3>
+
+                        <p>
+                            Portfolio website with reusable components.
+                           
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- CARD 2 -->
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img 
+                            src="assets/271333.jpg" 
+                            alt="portfolio preview"
+                        >
+                    </div>
+
+                    <div class="project-description">
+                        <h3>Project Two</h3>
+
+                        <p>
+                            Landing page and frontend design project.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- QUOTES -->
+        <section class="quotes">
+
+            <div class="section-title">
+                <h2>🌟 Quotes</h2>
+            </div>
+
+            <div class="quotes-box">
+
+                <h3>
+                    "Life is not a problem to be solved,
+                    but a reality to be experienced."
+                </h3>
+
+                <p>- Søren Kierkegaard</p>
+
+            </div>
+
+        </section>
+
+        <!-- SOCIAL -->
+        <footer class="social" id="contact">
+
+            <h2>Social Links</h2>
+
+            <div class="social-links">
+
+                <a 
+                    href="https://x.com/RAYRZE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-item"
+                >
+                    <span class="social-icon twitter"></span>
+                    Twitter
+                </a>
+
+                <a 
+                    href="https://github.com/RAYRZE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-item"
+                >
+                    <span class="social-icon github"></span>
+                    GitHub
+                </a>
+
+                <a 
+                    href="https://linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-item"
+                >
+                    <span class="social-icon linkedin"></span>
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </footer>
+
     </div>
+
 </body>
 </html>
