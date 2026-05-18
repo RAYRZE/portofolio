@@ -1,0 +1,661 @@
+/* ==================== RESET ==================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==================== BODY ==================== */
+body {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #0c4a6e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==================== GLOBAL ==================== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 16px;
+}
+
+/* ==================== NAVBAR ==================== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 18px 28px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  padding: 8px 16px;
+  border: 2px solid #0c4a6e;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu a {
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #075985;
+  transform: translateY(-2px);
+}
+
+.profile {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0c4a6e;
+}
+
+/* ==================== HERO ==================== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 80px 40px;
+  background: #e0f2fe;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+}
+
+.text-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+
+.text-hero h1 {
+  font-size: clamp(32px, 6vw, 56px);
+}
+
+.text-hero h2 {
+  font-size: clamp(22px, 4vw, 32px);
+}
+
+.text-hero h3 {
+  font-size: clamp(16px, 2.5vw, 20px);
+}
+
+.text-hero p {
+  font-size: clamp(15px, 2vw, 18px);
+  opacity: 0.9;
+}
+
+.buttons-hero {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.button-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 45px;
+  border-radius: 10px;
+  background: #0c4a6e;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.button-hero:hover {
+  background: #075985;
+  transform: translateY(-4px);
+}
+
+/* Avatar khusus untuk hero (div) – hindari bentrok dengan img.avatar */
+.hero-avatar {
+  width: clamp(140px, 28vw, 240px);
+  height: clamp(140px, 28vw, 240px);
+  border-radius: 50%;
+  background-image: url("../assets/avatar.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 4px solid rgba(12, 74, 110, 0.15);
+}
+
+/* Avatar untuk gambar biasa (digunakan di About) */
+img.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(12, 74, 110, 0.2);
+}
+
+/* ==================== SECTION TITLE ==================== */
+.section-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: clamp(24px, 4vw, 34px);
+}
+
+/* ==================== PORTFOLIO ==================== */
+.porto {
+  padding: 80px 30px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+}
+
+.container-project {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: min(100%, 350px);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 2px solid #1f2937;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-description {
+  padding: 20px;
+  background: #e0f2fe;
+  border: 2px solid #1f2937;
+  border-top: none;
+  text-align: center;
+}
+
+.project-description h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.project-description p {
+  font-size: 16px;
+}
+
+/* ==================== QUOTES ==================== */
+.quotes {
+  padding: 80px 30px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  text-align: center;
+}
+
+.quotes-box {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background: #e0f2fe;
+  border-radius: 14px;
+}
+
+.quotes-box h3 {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.quotes-box p {
+  font-size: 18px;
+}
+
+/* ==================== SOCIAL FOOTER ==================== */
+.social {
+  padding: 40px 20px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  text-align: center;
+}
+
+.social h2 {
+  margin-bottom: 24px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.social-item:hover {
+  color: #075985;
+  transform: translateY(-2px);
+}
+
+.social-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.twitter {
+  background-image: url("../assets/twitter-brands-solid-full.svg");
+}
+
+.github {
+  background-image: url("../assets/github-brands-solid-full.svg");
+}
+
+.linkedin {
+  background-image: url("../assets/linkedin-brands-solid-full.svg");
+}
+
+/* ==================== ABOUT PAGE ==================== */
+.hero-about {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px;
+  background: #e0f2fe;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+}
+
+.container-description {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.container-in-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutme-text-name {
+  margin-bottom: 12px;
+}
+
+.aboutme-text-name h2 {
+  font-size: 32px;
+}
+
+.aboutme-text-name h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #075985;
+}
+
+.description p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* ==================== SKILLS SECTION ==================== */
+.skills {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+}
+
+.skills h1 {
+  margin-bottom: 30px;
+}
+
+.container-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skills-box {
+  width: min(100%, 280px);
+  padding: 25px 20px;
+  background: #b7e2ff;
+  border-radius: 16px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.skills-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.skills-box h2 {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.skills-description p {
+  font-size: 15px;
+  text-align: left;
+}
+
+/* ==================== CONTACT PAGE ==================== */
+.container-contact {
+  padding: 40px 20px;
+  background: #e0f2fe;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+}
+
+.container-contact h1 {
+  margin-bottom: 30px;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Formulir kontak */
+.contact {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: min(100%, 600px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-box label {
+  font-weight: 600;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: 0.2s;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.input-box textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.button-send {
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.button-send:hover {
+  background: #1d4ed8;
+  transform: translateY(-4px);
+}
+
+.button-send:active {
+  transform: scale(0.97);
+}
+
+/* Informasi kontak samping */
+.email-etc {
+  width: min(100%, 320px);
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.email-etc .input-box {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-etc .input-box span {
+  font-size: 20px;
+}
+
+.email-etc a {
+  color: #0c4a6e;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.email-etc a:hover {
+  text-decoration: underline;
+}
+
+.hr {
+  border: none;
+  border-top: 2px solid black;
+  margin: 24px 0;
+}
+
+/* ==================== RESPONSIVE TABLET ==================== */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 64px 24px;
+    gap: 32px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .porto,
+  .quotes {
+    padding: 64px 20px;
+  }
+
+  .hero-about {
+    padding: 32px 20px;
+  }
+
+  .container-description {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutme-text-name,
+  .description p {
+    text-align: center;
+  }
+
+  .contact-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-etc {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+/* ==================== RESPONSIVE HP ==================== */
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 8px;
+  }
+
+  .navbar {
+    padding: 16px 14px;
+  }
+
+  .logo {
+    font-size: 20px;
+    padding: 8px 14px;
+  }
+
+  .menu {
+    gap: 12px;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 48px 16px;
+    gap: 24px;
+  }
+
+  .buttons-hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-hero {
+    width: min(100%, 220px);
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-description {
+    padding: 16px;
+  }
+
+  .quotes-box {
+    padding: 28px 18px;
+  }
+
+  .quotes-box h3 {
+    font-size: 22px;
+  }
+
+  .quotes-box p {
+    font-size: 16px;
+  }
+
+  .hero-about {
+    padding: 28px 16px;
+  }
+
+  img.avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .skills {
+    padding: 28px 16px;
+  }
+
+  .skills-box {
+    width: 100%;
+  }
+
+  .container-contact {
+    padding: 28px 16px;
+  }
+
+  .contact,
+  .email-etc {
+    padding: 20px 16px;
+  }
+
+  .button-send {
+    width: 100%;
+    text-align: center;
+  }
+
+  .email-etc .input-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

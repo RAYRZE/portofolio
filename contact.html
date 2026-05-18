@@ -1,29 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>RRZRE portofolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="frontend/style.css">
+  <title>RRZRE Contact Me</title>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="backend/script.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <!--NAVBAR-->
-        <header class="navbar">
-            <div class="logo">
-                RZ
-            </div>
-            <nav class="menu">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                 <img 
-                src="assets/avatar.png" 
-                alt="profile picture"
-                class="profile"
-                >
-            </nav>
-        </header>
+  <div class="wrapper">
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="logo">RZ</div>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <img src="assets/avatar.png" alt="profile picture" class="profile">
+      </nav>
+    </header>
+
+    <div class="container-contact">
+      <h1>✉️ Contact Me</h1>
+
+      <div class="contact-box">
+        <form class="contact" id="contact-form">
+          <div class="input-box">
+            <label for="name">👤 Name</label>
+            <input type="text" id="name" placeholder="name" name="name" required>
+          </div>
+
+          <div class="input-box">
+            <label for="email">✉️ Email</label>
+            <input type="email" id="email" placeholder="email" name="email" required>
+          </div>
+
+          <div class="input-box">
+            <label for="subject">📝 Subject</label>
+            <input type="text" id="subject" placeholder="subject" name="subject" required>
+          </div>
+
+          <div class="input-box">
+            <label for="message">💬 Message</label>
+            <textarea id="message" placeholder="message" name="message" required></textarea>
+          </div>
+
+          <button class="button-send" type="submit">Send Message</button>
+        </form>
+
+        <div class="contact email-etc">
+
+            <span>✉️</span>
+            <p>rayzre.dev@gmail.com</p>
+         
+
+
+            <span>📞</span>
+            <p>+62 882-0030-6794</p>
+        
+
+            <span>📍</span>
+            <a href="https://id.wikipedia.org/wiki/Kota_Yogyakarta" target="_blank" rel="noopener">
+              🏙️ Yogyakarta, Indonesia
+            </a>
+
+            <hr>
+
+            <a href="https://x.com/RAYRZE" target="_blank" rel="noopener">
+              <span class="social-icon twitter"></span>
+              Twitter
+            </a>
+
+            <a href="https://github.com/RAYRZE" target="_blank" rel="noopener">
+              <span class="social-icon github"></span>
+              GitHub
+            </a>
+        </div>
+      </div>
     </div>
+
+    <footer class="social" id="contact">
+      <h2>Social Links</h2>
+
+      <div class="social-links">
+        <a href="https://x.com/RAYRZE" target="_blank" rel="noopener noreferrer" class="social-item">
+          <span class="social-icon twitter"></span>
+          Twitter
+        </a>
+
+        <a href="https://github.com/RAYRZE" target="_blank" rel="noopener noreferrer" class="social-item">
+          <span class="social-icon github"></span>
+          GitHub
+        </a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
